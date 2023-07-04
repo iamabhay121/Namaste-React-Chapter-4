@@ -3,7 +3,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import FoodFireLogo from "../Ep-4/Images/Food Fire Logo.png";
+import FoodLogo from "../Ep-4/Images/FoodLogo.png";
 
 /* My Food App structure will look like this, 
             1) Header
@@ -25,9 +25,12 @@ import FoodFireLogo from "../Ep-4/Images/Food Fire Logo.png";
 
 // Title component for display logo
 const Title = () => (
-  <a href="/">
-    <img className="logo" src={FoodFireLogo} alt="Food Fire Logo" />
-  </a>
+ <>
+    <a href="/">
+    <img className="logo" src={FoodLogo} alt="Food Logo" />
+    </a>
+    <p>MEAL DROP </p>
+</>
 );
 
 // Header component for header section: Logo, Nav Items
@@ -1914,12 +1917,10 @@ const Footer = () => {
     <div className="footer">
       Created By
       <i class="fa-solid fa-heart"></i>
-      <a href="https://www.linkedin.com/in/chetannada/" target="_blank">
-        Chetan Nada
-      </a>
+      <p>Abhay Agarwal</p>
       <i class="fa-solid fa-copyright"></i>2023
       <strong>
-        Food<span>Fire</span>
+        Meal Drop
       </strong>
     </div>
   );
